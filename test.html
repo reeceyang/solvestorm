@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <script src="scripts/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <script>
+    var sampleExam = {
+      id: "1",
+      name: "Sample Test",
+      author: "Reece Yang",
+      problems: [{
+          id: "1",
+          type: "single-choice",
+          text: "Evaluate 9 + 10.",
+          choices: ["18", "19", "20", "21"]
+        },
+        {
+          id: "2",
+          type: "single-choice",
+          text: "Compute the area of a square with side length 2.",
+          choices: ["2", "3", "4", "5"]
+        }
+      ]
+    };
+
+    var sampleAnswers = {
+      id: "1",
+      answers: [{
+          id: "1",
+          answer: "19"
+        },
+        {
+          id: "2",
+          answer: "4"
+        }
+      ]
+    }
+
+    $("body").append(tojQueryObject(sampleExam));
+  </script>
+</body>
+
+</html>
